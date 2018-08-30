@@ -1,0 +1,360 @@
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h4,h5{
+    margin: 0;
+}
+
+body{
+    max-width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.textCont,{
+    margin: 0 auto;
+    text-align: center;
+    padding: 6% 8%;
+}
+
+.fab, .fas{
+    margin: 0 7%;
+}
+
+p{
+    font-size: 20px;
+}
+
+.y-align{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/////////////////////
+//     Navbar      // 
+/////////////////////
+
+// .glyphicon {
+//     font-size: 20px;
+//     color: purple;
+// }
+
+
+.navbar{
+    background-color: #ad6541;
+    padding-left: 50px;
+    padding-right: 50px;
+    a{
+        color: #fff;
+    }
+    li{
+        border-radius: 5px;
+    }
+}
+
+.nav-item:hover {
+    text-decoration: none;
+    background-color: darkcyan;
+    transition: all 0.5s ease-in-out;
+}
+
+.testStyle{
+    color: rgb(79, 247, 112) !important;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgb(255, 255, 255);
+    border-color: rgba(0,0,0,0);
+}
+.navbar-toggler:hover{
+    color: rgb(79, 247, 112);
+}
+.navbar-toggler:active{
+    color: rgb(79, 247, 112);
+}
+button:focus{
+    outline: none;
+}
+
+
+
+/////////////////////
+//     Showcase    // 
+/////////////////////
+
+.showcase{
+    height: 100vh;
+    background: #f2e9d0;
+}
+
+.sc-text{
+    h4{
+        margin-bottom: 20px;
+    }
+    h1,p{
+        margin-bottom: 40px;
+    }
+}
+
+
+.sc-image{
+    display: none; //IMAGE REMOVED FOR MOBILE SCREENS
+    background: url("/img/ros1.jpg") no-repeat 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+//////////////////////////////////////////
+//          About Section               //
+//////////////////////////////////////////
+
+.aboutCont{
+    background: #fff;
+}
+
+//////////////////////////////////////////
+//          Skill Grid                  //
+//////////////////////////////////////////
+
+.languageGrid{
+    height: 1400px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: 
+    "c1"
+    "c2"
+    "c3"
+    "c4";
+}
+
+#c1{
+    grid-area: c1;
+    background: green;
+}
+#c2{
+    grid-area: c2;
+    background: peachpuff;
+}
+#c3{
+    grid-area: c3;
+    background: lightseagreen;
+}
+#c4{
+    grid-area: c4;
+    background: plum;
+}
+
+#c1, #c2, #c3, #c4{
+    h2{
+        margin-top: 40px;
+    }
+    p{
+        margin-top: 10%;
+        margin-bottom: 15%;
+        font-size: 20px;
+    }
+}
+
+///////////////
+// Projects  //
+///////////////
+#projectMain{
+    // parallax start
+    background-image: url("https://i.imgur.com/2HZCGsX.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // parallax end
+    height: 600px;
+    color: black;
+    text-shadow: black;
+    transition: all 0.4s ease-in-out;
+}
+#arcadia-text{
+    height: 600px;
+}
+#arcadia-bg{
+    display: none;
+}
+
+#projectGrid{
+    height: 1300px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: 
+    "p1"
+    "p2"
+    "p3";
+    transition: all 0.4s ease-in-out;
+
+}
+
+#p1{
+    background-image: url("https://i.imgur.com/gUMHWvP.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    grid-area: p1;
+    transition: all 0.4s ease-in-out;
+}
+
+#p2{
+    background-image: url("https://i.imgur.com/gUMHWvP.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    grid-area: p2;
+    transition: all 0.4s ease-in-out;
+}
+#p3{
+    background-image: url("https://i.imgur.com/gUMHWvP.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    grid-area: p3;
+    transition: all 0.4s ease-in-out;
+
+}
+////////////
+//   Buttons  //
+////////////
+
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: .40s;
+	padding: 15px 20px;
+	font-size: 20px;
+	border-radius: 4px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	margin: 5px;
+}
+
+#showCase-btn{
+    width: auto;
+}
+
+a:hover{
+    text-decoration: none;
+    // color: white;
+}
+.button {
+    width: 170px;
+    display: block;
+    margin: 10px auto;
+    border: 2px solid #FF5252;
+    color: #FF5252;
+    transition: .40s;
+    -webkit-transition: .40s;
+}
+
+.button:hover{
+    background-color: #E2AD58;
+    border: 2px solid #E2AD58;
+    color: #fff;
+}
+
+
+
+///////////////////////
+//   Media Queries  ///
+///////////////////////
+
+@media (min-width: 930px){
+    .showcase{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        'sc-image sc-text'
+    }
+    .sc-image{
+        display: block;
+        grid-area: sc-image;
+    }
+    .sc-text{
+        grid-area: sc-text;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .languageGrid{
+        height: auto;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-areas: 
+        "c1 c2 c3 c4";
+    }
+    #projectGrid{
+        height: 500px;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        grid-template-rows: 100%;
+        grid-template-areas: 
+        "p1 p2 p3";
+    }
+    #projectMain{
+        // parallax start
+        // background-image: url("https://i.imgur.com/2HZCGsX.jpg");
+        // background-attachment: fixed;
+        // background-position: center;
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // parallax end
+        height: 600px;
+        color: black;
+        text-shadow: black;
+        transition: all 0.4s ease-in-out;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        grid-template-areas:
+        "arcadia-text arcadia-bg";
+    }
+    #arcadia-text{
+        grid-area: arcadia-text;
+        background: lightseagreen;;
+    }
+    #arcadia-bg{
+        display: block;
+        grid-area: arcadia-bg;
+        background-image: url("https://i.imgur.com/2HZCGsX.jpg");
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position: left;
+        transition: all 0.4s ease-in-out;
+    }
+    .fab, .fas{
+        margin: 10% 7%;
+    }
+    .button {
+        display: inline-block;
+        margin: 10px;
+        .fab, .fas{
+            margin: 0;
+        }
+    }
+}
