@@ -1,14 +1,17 @@
 // grabbing the elements
 
-let navButt = document.getElementById("navButt");
-let git1 = document.getElementById("git1");
-let git2 = document.getElementById("git2");
-let git3 = document.getElementById("git3");
-let git4 = document.getElementById("git4");
-let arcBG = document.getElementById("arcadia-bg");
-let p1 = document.getElementById("p1");
-let p2 = document.getElementById("p2");
-let p3 = document.getElementById("p3");
+const navButt = document.getElementById("navButt");
+const git1 = document.getElementById("git1");
+const git2 = document.getElementById("git2");
+const git3 = document.getElementById("git3");
+const git4 = document.getElementById("git4");
+const arcBG = document.getElementById("arcadia-bg");
+const p1 = document.getElementById("p1");
+const p2 = document.getElementById("p2");
+const p3 = document.getElementById("p3");
+const scText = document.getElementById("scText");
+const scTextCont = document.getElementById("scTextCont");
+
 
 // let top = document.getElementById('header');
 
@@ -16,13 +19,30 @@ function myFunction(){
     navButt.classList.toggle("testStyle");
 }
 
-    
+console.log(scText);
+
+window.addEventListener("resize", removeYalign);
+document.addEventListener("DOMContentLoaded", removeYalign);
+function removeYalign(){
+    if(document.documentElement.clientWidth < 768){
+        scText.classList.add("y-align");
+        scTextCont.classList.remove("textLeft");
+    } else{
+        scText.classList.remove("y-align");
+        scTextCont.classList.add("textLeft");
+    }
+}
 
 
 
 
-// fire when screen size is above 930px
-if (document.documentElement.clientWidth > 930) {
+  
+
+
+
+
+// fire when screen size is above 767px
+if (document.documentElement.clientWidth > 768) {
     git1.addEventListener("mouseenter", function() {   
         arcBG.style.backgroundImage = "url('/img/arc-code.png')";
         arcBG.style.color = "#FFF";
@@ -32,7 +52,7 @@ if (document.documentElement.clientWidth > 930) {
         //   }, 500);
         }, false);
         git1.addEventListener("mouseleave", function(){
-            arcBG.style.backgroundImage = "url('https://i.imgur.com/2HZCGsX.jpg')";  
+            arcBG.style.backgroundImage = "url('/img/work.jpg')";  
             arcBG.style.color = "black";  
         })
         
@@ -72,6 +92,39 @@ if (document.documentElement.clientWidth > 930) {
 // fire when below 930
 else {
     console.log('Smaller!');
+}
+
+
+// fade up animation
+let slider = document.querySelector('.slider');
+let processCont = document.querySelector('.process');
+
+window.addEventListener('scroll', function(e){
+  if (isScrolledIntoView(slider)){
+    classRemove(slider);
+  }
+  if (isScrolledIntoView(processCont)){
+    classRemove(processCont);
+  }
+},false);
+
+function classRemove(element){
+  setTimeout(() => {
+    element.classList.remove('fade-up');
+  }, 400);
+}
+
+
+function isScrolledIntoView(el) {
+  var rect = el.getBoundingClientRect();
+  var elemTop = rect.top;
+  var elemBottom = rect.bottom;
+
+  // Only completely visible elements return true:
+  // var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+  // Partially visible elements return true:
+  let isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+  return isVisible;
 }
 
 

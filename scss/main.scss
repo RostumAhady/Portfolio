@@ -14,18 +14,27 @@ body{
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    background: #0B0C10;
+    color: #fff;
 }
 
-.textCont,{
+.textCont{
     margin: 0 auto;
     text-align: center;
-    padding: 6% 8%;
+    padding: 0% 5%;
+    h1{
+        margin-bottom: 10px;
+    }
 }
 
 .fab, .fas{
-    margin: 0 7%;
+    margin: 0 5px;
+    text-shadow: 4px 4px 8px #000000;
 }
-
+.fa-codepen{
+    margin: 0px auto 15px auto !important;
+    
+}
 p{
     font-size: 20px;
 }
@@ -33,7 +42,11 @@ p{
 .y-align{
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) !important;
+}
+
+.textLeft{
+    text-align: left !important;
 }
 /////////////////////
 //     Navbar      // 
@@ -45,41 +58,41 @@ p{
 // }
 
 
-.navbar{
-    background-color: #ad6541;
-    padding-left: 50px;
-    padding-right: 50px;
-    a{
-        color: #fff;
-    }
-    li{
-        border-radius: 5px;
-    }
-}
+// .navbar{
+//     background-color: #ad6541;
+//     padding-left: 50px;
+//     padding-right: 50px;
+//     a{
+//         color: #fff;
+//     }
+//     li{
+//         border-radius: 5px;
+//     }
+// }
 
-.nav-item:hover {
-    text-decoration: none;
-    background-color: darkcyan;
-    transition: all 0.5s ease-in-out;
-}
+// .nav-item:hover {
+//     text-decoration: none;
+//     background-color: darkcyan;
+//     transition: all 0.5s ease-in-out;
+// }
 
-.testStyle{
-    color: rgb(79, 247, 112) !important;
-}
+// .testStyle{
+//     color: rgb(79, 247, 112) !important;
+// }
 
-.navbar-light .navbar-toggler {
-    color: rgb(255, 255, 255);
-    border-color: rgba(0,0,0,0);
-}
-.navbar-toggler:hover{
-    color: rgb(79, 247, 112);
-}
-.navbar-toggler:active{
-    color: rgb(79, 247, 112);
-}
-button:focus{
-    outline: none;
-}
+// .navbar-light .navbar-toggler {
+//     color: rgb(255, 255, 255);
+//     border-color: rgba(0,0,0,0);
+// }
+// .navbar-toggler:hover{
+//     color: rgb(79, 247, 112);
+// }
+// .navbar-toggler:active{
+//     color: rgb(79, 247, 112);
+// }
+// button:focus{
+//     outline: none;
+// }
 
 
 
@@ -89,26 +102,34 @@ button:focus{
 
 .showcase{
     height: 100vh;
-    background: #f2e9d0;
+    background: rgb(221, 198, 181);
 }
 
 .sc-text{
     h4{
         margin-bottom: 20px;
+        font-size: 35px;
+        
     }
     h1,p{
         margin-bottom: 40px;
     }
-}
+    h1{
+        font-size: 55px;
+    }
 
+}
+#scTextCont{
+    color: #000;
+}
 
 .sc-image{
     display: none; //IMAGE REMOVED FOR MOBILE SCREENS
-    background: url("/img/ros1.jpg") no-repeat 0;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    // background: url("/img/ros1.jpg") no-repeat 0;
+    // -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+    // background-size: cover;
 }
 
 
@@ -117,7 +138,12 @@ button:focus{
 //////////////////////////////////////////
 
 .aboutCont{
-    background: #fff;
+    height: 250px;
+    background: rgb(235, 231, 231);
+    color: #000;
+    p{
+        margin-bottom: 0;
+    }
 }
 
 //////////////////////////////////////////
@@ -138,19 +164,20 @@ button:focus{
 
 #c1{
     grid-area: c1;
-    background: green;
+    background: rgb(160, 126, 93);
+    
 }
 #c2{
     grid-area: c2;
-    background: peachpuff;
+    background: rgb(175, 106, 45);
 }
 #c3{
     grid-area: c3;
-    background: lightseagreen;
+    background: #ac4139;
 }
 #c4{
     grid-area: c4;
-    background: plum;
+    background: rgb(102, 77, 76);
 }
 
 #c1, #c2, #c3, #c4{
@@ -159,36 +186,57 @@ button:focus{
     }
     p{
         margin-top: 10%;
-        margin-bottom: 15%;
-        font-size: 20px;
     }
 }
 
 ///////////////
 // Projects  //
 ///////////////
-#projectMain{
-    // parallax start
-    background-image: url("https://i.imgur.com/2HZCGsX.jpg");
+.projectIntro{
+    height: 250px;
+    background: url("/img/work.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.projectIntro::before{ 
+    content: '';
+        display: block;
+        position: absolute;
+        background-color: #000;
+        opacity: 0.5;
+        width: 100%;
+        height: 29.5%;
+}
+
+#projectMain{
+    // parallax start
+    // background-attachment: fixed;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
     // parallax end
     height: 600px;
-    color: black;
-    text-shadow: black;
+    text-shadow: #000;
     transition: all 0.4s ease-in-out;
 }
 #arcadia-text{
-    height: 600px;
+    height: 600px;  
+    background-image: url("/img/scaffold.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 }
+
 #arcadia-bg{
     display: none;
 }
 
 #projectGrid{
-    height: 1300px;
+    height: 1150px;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 33% 33% 33%;
@@ -200,8 +248,14 @@ button:focus{
 
 }
 
+.mobileDisplay{
+    display: block !important;
+}
+.desktopDisplay{
+    display: none !important;
+}
 #p1{
-    background-image: url("https://i.imgur.com/gUMHWvP.jpg");
+    background-image: url("/img/eatery.jpeg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -222,35 +276,44 @@ button:focus{
     transition: all 0.4s ease-in-out;
 }
 #p3{
-    background-image: url("https://i.imgur.com/gUMHWvP.jpg");
+    // background-image: url("/img/pen.png");
+    border-radius: 50%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-position: center;
     color: white;
     grid-area: p3;
     transition: all 0.4s ease-in-out;
 
 }
+.codepenLogo{
+    grid-area: codepenLogo;
+    text-align: center;
+}
 ////////////
 //   Buttons  //
 ////////////
 
-a {
-	text-decoration: none;
-	text-transform: uppercase;
-	transition: .40s;
-	padding: 15px 20px;
-	font-size: 20px;
-	border-radius: 4px;
-	font-weight: bold;
-	text-transform: uppercase;
-	letter-spacing: 0px;
-	margin: 5px;
-}
-
-#showCase-btn{
+#showcaseButton{
     width: auto;
+    margin: 0;
+    background: transparent;
+}
+#formButton{
+    background: none;
+    border: #E2AD58 2px solid;
+    color: white;
+    width: 50%;
+    padding: 10px;
+    margin: 0 auto;
+    display: block;
+    
+}
+#formButton:hover{
+    border: green 2px solid;
+    color: white;
 }
 
 a:hover{
@@ -261,70 +324,114 @@ a:hover{
     width: 170px;
     display: block;
     margin: 10px auto;
-    border: 2px solid #FF5252;
-    color: #FF5252;
+    border: 3px solid #E1AC59;
+    color: #E1AC59;
+    border-radius: 7%;
+    text-decoration: none;
     transition: .40s;
     -webkit-transition: .40s;
+	padding: 15px 20px;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+    letter-spacing: 0px;
+    background: rgba(0, 0, 0, .6);
+    cursor: pointer;
 }
 
+.buttonBlack{
+    border: #000 3px solid;
+    color: #000;
+}
 .button:hover{
     background-color: #E2AD58;
-    border: 2px solid #E2AD58;
+    border: 3px solid #E2AD58;
     color: #fff;
 }
+.contact{
+    height: 800px;
+    width: 80%;
+    margin: 0 auto;
+    h2{
+        text-align: center;
+        margin-bottom: 30px;
+        color: #63F4EA;
+    }
+}
+.contactForm{
+    width: 100%;
+    margin: 0 auto;
+    .input, .textarea{
+        color: white;
+        background: none;
+        border: none;
+        border-bottom: #E2AD58 solid 1px;
+        margin: 30px auto;
+        width: 100%;
+        display: block;
+        :focus{
+            border-bottom: pink;
+        }
+    }
+    .input{
+        padding-bottom: 15px;
+    }
+    .textarea{
+        height: 100px;
+    }
+}
 
+.input:focus{
+    border-bottom: #fff solid 1px;
+}
+
+:focus{
+    outline: none;
+}
 
 
 ///////////////////////
 //   Media Queries  ///
 ///////////////////////
 
-@media (min-width: 930px){
+@media (min-width: 767px){
     .showcase{
         display: grid;
-        grid-template-columns: 50% 50%;
+        position: relative;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 20% 60% 20%;
         grid-template-areas: 
+        '. .'
         'sc-image sc-text'
+        '. .';
     }
     .sc-image{
         display: block;
         grid-area: sc-image;
+        width: 100%;
     }
     .sc-text{
         grid-area: sc-text;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
+        display: block;
     }
     .languageGrid{
-        height: auto;
+        height: 400px;
         grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 100%;
         grid-template-areas: 
         "c1 c2 c3 c4";
     }
     #projectGrid{
-        height: 500px;
+        height: 400px;
         grid-template-columns: 33.33% 33.33% 33.33%;
         grid-template-rows: 100%;
         grid-template-areas: 
         "p1 p2 p3";
     }
     #projectMain{
-        // parallax start
-        // background-image: url("https://i.imgur.com/2HZCGsX.jpg");
-        // background-attachment: fixed;
-        // background-position: center;
-        // background-repeat: no-repeat;
-        // background-size: cover;
-        // parallax end
-        height: 600px;
-        color: black;
-        text-shadow: black;
+        background: #ddc6b5;
+        color: #000;
+        height: 600px;  
         transition: all 0.4s ease-in-out;
         display: grid;
         grid-template-columns: 50% 50%;
@@ -332,22 +439,27 @@ a:hover{
         grid-template-areas:
         "arcadia-text arcadia-bg";
     }
+    .mobileDisplay{
+        display: none !important;
+    }
+    .desktopDisplay{
+        display: block !important;
+    }
     #arcadia-text{
         grid-area: arcadia-text;
-        background: lightseagreen;;
+        background: transparent;
     }
+    
     #arcadia-bg{
         display: block;
         grid-area: arcadia-bg;
-        background-image: url("https://i.imgur.com/2HZCGsX.jpg");
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        background-position: left;
-        transition: all 0.4s ease-in-out;
+        img{
+            width: 100%;
+            
+        }
+        
     }
-    .fab, .fas{
+    .fab .fas{
         margin: 10% 7%;
     }
     .button {
@@ -356,5 +468,8 @@ a:hover{
         .fab, .fas{
             margin: 0;
         }
+    }
+    .contactForm{
+        width: 480px;
     }
 }
