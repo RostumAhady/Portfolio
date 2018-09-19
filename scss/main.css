@@ -1,11 +1,3 @@
-html {
-  height: 100%;
-  margin: 0;
-  padding: 0; }
-
-h1, h4, h5 {
-  margin: 0; }
-
 body {
   max-width: 100%;
   height: 100%;
@@ -21,6 +13,9 @@ body {
   padding: 0% 5%; }
   .textCont h1 {
     margin-bottom: 10px; }
+
+h1, h4, h5 {
+  margin: 0; }
 
 .fab, .fas {
   margin: 0 5px;
@@ -41,7 +36,7 @@ p {
   text-align: left !important; }
 
 .showcase {
-  height: 100vh;
+  height: 90vh;
   background: #ddc6b5; }
 
 .sc-text h4 {
@@ -95,20 +90,11 @@ p {
 
 .projectIntro {
   height: 250px;
-  background: url("/img/work.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/work.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
-
-.projectIntro::before {
-  content: '';
-  display: block;
-  position: absolute;
-  background-color: #000;
-  opacity: 0.5;
-  width: 100%;
-  height: 29.5%; }
 
 #projectMain {
   height: 600px;
@@ -256,22 +242,29 @@ a:hover {
 :focus {
   outline: none; }
 
-@media (min-width: 767px) {
+@media (min-width: 813px) {
   .showcase {
     display: grid;
     position: relative;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 20% 60% 20%;
-    grid-template-areas: '. .' 'sc-image sc-text' '. .'; }
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 65% 10%;
+    grid-template-areas: '. .' 'sc-image sc-text' 'sc-image .'; }
 
   .sc-image {
     display: block;
     grid-area: sc-image;
     width: 100%; }
+    .sc-image img {
+      width: 100%;
+      height: 100%; }
 
   .sc-text {
     grid-area: sc-text;
     display: block; }
+
+  #scTextCont {
+    color: #000;
+    margin-top: 3%; }
 
   .languageGrid {
     height: 400px;

@@ -24,7 +24,7 @@ console.log(scText);
 window.addEventListener("resize", removeYalign);
 document.addEventListener("DOMContentLoaded", removeYalign);
 function removeYalign(){
-    if(document.documentElement.clientWidth < 768){
+    if(document.documentElement.clientWidth < 813){
         scText.classList.add("y-align");
         scTextCont.classList.remove("textLeft");
     } else{
@@ -41,8 +41,8 @@ function removeYalign(){
 
 
 
-// fire when screen size is above 767px
-if (document.documentElement.clientWidth > 768) {
+// fire when screen size is above 813px
+if (document.documentElement.clientWidth > 813) {
     git1.addEventListener("mouseenter", function() {   
         arcBG.style.backgroundImage = "url('/img/arc-code.png')";
         arcBG.style.color = "#FFF";
@@ -75,19 +75,6 @@ if (document.documentElement.clientWidth > 768) {
             p2.style.backgroundImage = "url('https://i.imgur.com/2HZCGsX.jpg')";  
             p2.style.color = "white";  
         })
-        
-        
-        //FOURTH PROJECT BUTTON
-        git4.addEventListener("mouseenter", function() {   
-            p3.style.backgroundImage = "url('/img/arc-code.png')";
-            p3.style.color = "#FFF";
-        }, false);
-        git4.addEventListener("mouseleave", codePic)
-        
-        function codePic(){
-            p3.style.backgroundImage = "url('https://i.imgur.com/2HZCGsX.jpg')";  
-            p3.style.color = "white"; 
-        }
 }
 // fire when below 930
 else {
