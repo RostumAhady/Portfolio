@@ -83,36 +83,36 @@ else {
 
 
 // fade up animation
-let slider = document.querySelector('.slider');
-let processCont = document.querySelector('.process');
+// let slider = document.querySelector('.slider');
+// let processCont = document.querySelector('.process');
 
-window.addEventListener('scroll', function(e){
-  if (isScrolledIntoView(slider)){
-    classRemove(slider);
-  }
-  if (isScrolledIntoView(processCont)){
-    classRemove(processCont);
-  }
-},false);
+// window.addEventListener('scroll', function(e){
+//   if (isScrolledIntoView(slider)){
+//     classRemove(slider);
+//   }
+//   if (isScrolledIntoView(processCont)){
+//     classRemove(processCont);
+//   }
+// },false);
 
-function classRemove(element){
-  setTimeout(() => {
-    element.classList.remove('fade-up');
-  }, 400);
-}
+// function classRemove(element){
+//   setTimeout(() => {
+//     element.classList.remove('fade-up');
+//   }, 400);
+// }
 
 
-function isScrolledIntoView(el) {
-  var rect = el.getBoundingClientRect();
-  var elemTop = rect.top;
-  var elemBottom = rect.bottom;
+// function isScrolledIntoView(el) {
+//   var rect = el.getBoundingClientRect();
+//   var elemTop = rect.top;
+//   var elemBottom = rect.bottom;
 
-  // Only completely visible elements return true:
-  // var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
-  // Partially visible elements return true:
-  let isVisible = elemTop < window.innerHeight && elemBottom >= 0;
-  return isVisible;
-}
+//   // Only completely visible elements return true:
+//   // var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+//   // Partially visible elements return true:
+//   let isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+//   return isVisible;
+// }
 
 
 
