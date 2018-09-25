@@ -6,38 +6,9 @@ const git2 = document.getElementById("git2");
 const git3 = document.getElementById("git3");
 const git4 = document.getElementById("git4");
 const arcBG = document.getElementById("arcadia-bg");
-const p1 = document.getElementById("p1");
-const p2 = document.getElementById("p2");
-const p3 = document.getElementById("p3");
-const scText = document.getElementById("scText");
-const scTextCont = document.getElementById("scTextCont");
-
-
-// let top = document.getElementById('header');
-
-function myFunction(){
-    navButt.classList.toggle("testStyle");
-}
-
-console.log(scText);
-
-window.addEventListener("resize", removeYalign);
-document.addEventListener("DOMContentLoaded", removeYalign);
-function removeYalign(){
-    if(document.documentElement.clientWidth < 813){
-        scText.classList.add("y-align");
-        scTextCont.classList.remove("textLeft");
-    } else{
-        scText.classList.remove("y-align");
-        scTextCont.classList.add("textLeft");
-    }
-}
-
-
-
-
-  
-
+const p1 = document.querySelector(".p1");
+const p2 = document.querySelector(".p2");
+const p3 = document.querySelector(".p3");
 
 
 
@@ -57,13 +28,13 @@ if (document.documentElement.clientWidth > 813) {
         })
         
         //SECOND PROJECT BUTTON
-        git2.addEventListener("mouseenter", function() {   
-            p1.style.backgroundImage = "url('/img/arc-code.png')";
-            p1.style.color = "#FFF";
+        git2.addEventListener("mouseenter", function() {  
+            p1.classList.remove('p1'); 
+            p1.classList.add('codeBackground');
         }, false);
         git2.addEventListener("mouseleave", function(){
-            p1.style.backgroundImage = "url('https://i.imgur.com/2HZCGsX.jpg')";  
-            p1.style.color = "white";  
+            p1.classList.remove('codeBackground');   
+            p1.classList.add('p1'); 
         })
         
         //THIRD PROJECT BUTTON

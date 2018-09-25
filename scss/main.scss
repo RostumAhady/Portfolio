@@ -9,6 +9,8 @@ body{
 }
 
 .textCont{
+    justify-self: center;
+    align-self: center;
     margin: 0 auto;
     text-align: center;
     padding: 0% 5%;
@@ -24,10 +26,6 @@ h1,h4,h5{
 .fab, .fas{
     margin: 0 5px;
     text-shadow: 4px 4px 8px #000000;
-}
-.fa-codepen{
-    margin: 0px auto 15px auto !important;
-    
 }
 p{
     font-size: 20px;
@@ -48,27 +46,37 @@ p{
 /////////////////////
 
 .showcase{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    'sc-text';
     height: 98vh;
-    max-height: 1050px;
     background: rgb(221, 198, 181);
+    justify-items: center;
+    align-items: center;
 }
 
 .sc-text{
+    grid-area: sc-text;
+    width: 100%;
     h4{
         margin-bottom: 20px;
-        font-size: 35px;
-        
+        font-size: 2rem;
     }
     h1,p{
         margin-bottom: 30px;
     }
     h1{
-        font-size: 55px;
+        font-size: 3rem;
+        color: #f5f5f5;
+        text-shadow: #000 3px 4px 3px;
     }
 
 }
 #scTextCont{
     color: #000;
+    text-align: center;
 }
 
 .sc-image{
@@ -84,6 +92,10 @@ p{
     height: 250px;
     background: rgb(235, 231, 231);
     color: #000;
+    position: relative;
+    display: grid;
+    justify-items: center;
+    align-items: center;
     p{
         margin-bottom: 0;
     }
@@ -125,6 +137,7 @@ p{
 }
 
 #c1, #c2, #c3, #c4{
+    display: grid;
     h2{
         margin-top: 40px;
     }
@@ -137,6 +150,7 @@ p{
 // Projects  //
 ///////////////
 .projectIntro{
+    display: grid;
     height: 250px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/work.jpg");
     background-attachment: fixed;
@@ -153,6 +167,7 @@ p{
     transition: all 0.4s ease-in-out;
 }
 #arcadia-text{
+    display: grid;
     height: 600px;  
     background-image: url("/img/scaffold.jpg");
     -webkit-background-size: cover;
@@ -169,60 +184,66 @@ p{
 #projectGrid{
     height: 1150px;
     display: grid;
-
     grid-template-columns: 100%;
     grid-template-rows: 33% 33% 33%;
     grid-template-areas: 
     "p1"
     "p2"
     "p3";
-    transition: all 0.4s ease-in-out;
 
 }
 
-.mobileDisplay{
-    display: block !important;
+.projectItem{
+    transition: all 0.4s ease;
+    width: 100%;
+    display: grid;
+    color: white;
+    .button{
+        width: 140px;
+        padding: 5px;
+        font-size: 17px;
+
+    }
 }
-.desktopDisplay{
-    display: none !important;
-}
-#p1{
-    background-image: url("/img/eatery.jpeg");
+.p1{
+    opacity: 0.8;
+    background: url("/img/eatery.jpeg") no-repeat 0 0;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    color: white;
     grid-area: p1;
-    transition: all 0.4s ease-in-out;
 }
-
-#p2{
-    background-image: url("https://i.imgur.com/gUMHWvP.jpg");
+.p2{
+    background: url("/img/code.jpg") no-repeat 0 0;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    color: white;
     grid-area: p2;
-    transition: all 0.4s ease-in-out;
 }
-#p3{
-    // background-image: url("/img/pen.png");
-    border-radius: 50%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: center;
-    color: white;
+.p3{
     grid-area: p3;
-    transition: all 0.4s ease-in-out;
-
+    grid-template-rows: 25% auto;
 }
-.codepenLogo{
-    grid-area: codepenLogo;
+.penLogo{
+    height: max-content;
     text-align: center;
+    align-self: center;
+}
+.codePenCont{
+    justify-self: center;
+    align-self: start;
+}
+.codeBackground{
+   
+    opacity: 0.6;
+    grid-area: p1;
+    background: url("/img/code1.jpg") no-repeat 0 0 !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
 }
 ////////////
 //   Buttons  //
@@ -230,9 +251,8 @@ p{
 
 #showcaseButton{
     width: auto;
-    max-width: 460px;
+    max-width: 320px;
     margin: 0 auto;
-    background: transparent;
 }
 #formButton{
     background: none;
@@ -256,10 +276,10 @@ a:hover{
 .button {
     width: 170px;
     display: block;
-    margin: 10px auto;
+    margin: 15px auto;
     border: 3px solid #E1AC59;
     color: #E1AC59;
-    border-radius: 7%;
+    border-radius: 15%;
     text-decoration: none;
     transition: .40s;
     -webkit-transition: .40s;
@@ -272,16 +292,13 @@ a:hover{
     cursor: pointer;
 }
 
-.buttonBlack{
-    border: #000 3px solid;
-    color: #000;
-}
 .button:hover{
     background-color: #E2AD58;
     border: 3px solid #E2AD58;
     color: #fff;
 }
 .contact{
+    display: grid;
     height: 800px;
     width: 80%;
     margin: 0 auto;
@@ -293,7 +310,8 @@ a:hover{
 }
 .contactForm{
     width: 100%;
-    margin: 0 auto;
+    justify-self: center;
+    align-self: center;
     .input, .textarea{
         color: white;
         background: none;
@@ -332,34 +350,39 @@ a:hover{
         display: grid;
         position: relative;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 25% 65% 10%;
+        grid-template-rows: 20% 50% 30%;
         grid-template-areas: 
         '. .'
         'sc-image sc-text'
         'sc-image .';
+
     }
     .sc-image{
         display: block;
+        justify-self: end;
+        align-self: end;
         grid-area: sc-image;
-        width: 100%;
-        img{
-            float: right;
-            height: 100%;
-            width: 90%;
-            min-width: 600px;
-            max-width: 800px;
-            min-height: 380px;
-
-            
-        }
+        height: 100%;
+        min-height: 380px;
+        -webkit-filter: drop-shadow(5px 5px 5px #222);
+        filter: drop-shadow(5px 5px 10px #222);
     }
     .sc-text{
         grid-area: sc-text;
+        justify-self: start;
+        align-self: center;
         display: block;
+        h4{
+            font-size: 3rem;
+        }
+        h1{
+            font-size: 4rem;
+        }
+        
     }
     #scTextCont{
         color: #000;
-        margin-top: 10%;
+        text-align: left;
     }
     .languageGrid{
         height: 400px;
@@ -385,12 +408,6 @@ a:hover{
         grid-template-areas:
         "arcadia-text arcadia-bg";
     }
-    .mobileDisplay{
-        display: none !important;
-    }
-    .desktopDisplay{
-        display: block !important;
-    }
     #arcadia-text{
         height: auto;
         grid-area: arcadia-text;
@@ -398,7 +415,7 @@ a:hover{
     }
     
     #arcadia-bg{
-        display: block;
+        display: grid;
         grid-area: arcadia-bg;
         img{
             width: 100%;
