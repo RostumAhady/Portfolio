@@ -1,11 +1,13 @@
 body {
+  opacity: 0;
   max-width: 100%;
   height: 100%;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
-  background: #0B0C10;
-  color: #fff; }
+  background: #fff;
+  color: #fff;
+  transition: all 1s ease; }
 
 .textCont {
   justify-self: center;
@@ -20,16 +22,14 @@ h1, h4, h5 {
   margin: 0; }
 
 .fab, .fas {
-  margin: 0 5px;
+  margin: 0 10px;
   text-shadow: 4px 4px 8px #000000; }
 
 p {
   font-size: 20px; }
 
-.y-align {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%) !important; }
+a:hover {
+  text-decoration: none; }
 
 .textLeft {
   text-align: left !important; }
@@ -73,6 +73,7 @@ p {
   justify-items: center;
   align-items: center; }
   .aboutCont p {
+    margin-top: 15px;
     margin-bottom: 0; }
 
 .languageGrid {
@@ -142,7 +143,7 @@ p {
   grid-template-areas: "p1" "p2" "p3"; }
 
 .projectItem {
-  transition: all 0.4s ease;
+  transition: all 0.35s ease-in-out;
   width: 100%;
   display: grid;
   color: white; }
@@ -152,23 +153,25 @@ p {
     font-size: 17px; }
 
 .p1 {
-  opacity: 0.8;
-  background: url("/img/eatery.jpeg") no-repeat 0 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/img/eatery3.jpg") no-repeat 0 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-position: center;
   grid-area: p1; }
 
 .p2 {
-  background: url("/img/code.jpg") no-repeat 0 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/img/trump.jpg") no-repeat 0 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-position: center;
   grid-area: p2; }
 
 .p3 {
+  background: #161616;
   grid-area: p3;
   grid-template-rows: 25% auto; }
 
@@ -182,13 +185,12 @@ p {
   align-self: start; }
 
 .codeBackground {
-  opacity: 0.6;
-  grid-area: p1;
-  background: url("/img/code1.jpg") no-repeat 0 0 !important;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/code1.jpg") no-repeat 0 0 !important;
   -webkit-background-size: cover !important;
   -moz-background-size: cover !important;
   -o-background-size: cover !important;
-  background-size: cover !important; }
+  background-size: cover !important;
+  background-position: left !important; }
 
 #showcaseButton {
   width: auto;
@@ -197,7 +199,7 @@ p {
 
 #formButton {
   background: none;
-  border: #E2AD58 2px solid;
+  border: #000 2px solid;
   color: white;
   width: 50%;
   padding: 10px;
@@ -208,14 +210,11 @@ p {
   border: green 2px solid;
   color: white; }
 
-a:hover {
-  text-decoration: none; }
-
 .button {
   width: 170px;
   display: block;
   margin: 15px auto;
-  border: 3px solid #E1AC59;
+  border: 4px solid #000;
   color: #E1AC59;
   border-radius: 15%;
   text-decoration: none;
@@ -227,12 +226,12 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 0px;
   background: rgba(0, 0, 0, 0.6);
+  white-space: nowrap;
   cursor: pointer; }
-
-.button:hover {
-  background-color: #E2AD58;
-  border: 3px solid #E2AD58;
-  color: #fff; }
+  .button:hover {
+    background-color: #E2AD58;
+    border: 4px solid #E2AD58;
+    color: #fff; }
 
 .contact {
   display: grid;
@@ -301,6 +300,9 @@ a:hover {
     color: #000;
     text-align: left; }
 
+  .aboutCont {
+    padding: 0 15%; }
+
   .languageGrid {
     height: 400px;
     grid-template-columns: 25% 25% 25% 25%;
@@ -315,7 +317,7 @@ a:hover {
 
   #projectMain {
     background: #ddc6b5;
-    height: 750px;
+    height: 650px;
     transition: all 0.4s ease-in-out;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -332,9 +334,6 @@ a:hover {
     grid-area: arcadia-bg; }
     #arcadia-bg img {
       width: 100%; }
-
-  .fab .fas {
-    margin: 10% 7%; }
 
   .button {
     display: inline-block;
