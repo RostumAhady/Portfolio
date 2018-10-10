@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 body {
   opacity: 0;
   max-width: 100%;
@@ -9,14 +10,19 @@ body {
   color: #fff;
   transition: all 1s ease; }
 
+h2 {
+  font-weight: bold; }
+
 .textCont {
   justify-self: center;
   align-self: center;
   margin: 0 auto;
   text-align: center;
-  padding: 0% 5%; }
-  .textCont h1 {
-    margin-bottom: 10px; }
+  padding: 0% 5%;
+  font-family: 'Roboto', sans-serif; }
+  .textCont h2 {
+    margin-bottom: 10px;
+    letter-spacing: 1px; }
 
 h1, h4, h5 {
   margin: 0; }
@@ -31,44 +37,34 @@ p {
 a:hover {
   text-decoration: none; }
 
-.textLeft {
-  text-align: left !important; }
-
 .showcase {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 100%;
   grid-template-areas: 'sc-text';
   height: 98vh;
-  background: #ddc6b5;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/pic2.jpg") no-repeat 0;
+  background-size: cover;
+  background-position: center;
   justify-items: center;
   align-items: center; }
 
 .sc-text {
   grid-area: sc-text;
   width: 100%; }
-  .sc-text h4 {
-    margin-bottom: 20px;
-    font-size: 2rem; }
-  .sc-text h1, .sc-text p {
-    margin-bottom: 30px; }
   .sc-text h1 {
-    font-size: 3rem;
-    color: #f5f5f5;
-    text-shadow: #000 3px 4px 3px; }
-
-#scTextCont {
-  color: #000;
-  text-align: center; }
-
-.sc-image {
-  display: none; }
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 73px; }
+  .sc-text .button {
+    width: 235px;
+    text-align: center;
+    margin: 35px auto 0 auto; }
 
 .aboutCont {
-  height: 250px;
-  background: #ebe7e7;
-  color: #000;
-  position: relative;
+  height: 300px;
+  background: #797979;
   display: grid;
   justify-items: center;
   align-items: center; }
@@ -78,27 +74,23 @@ a:hover {
 
 .languageGrid {
   height: 1400px;
-  border-bottom: 8px solid #0B0C10;
+  background-image: linear-gradient(to bottom, #08c6df, #187a86);
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 25% 25% 25% 25%;
   grid-template-areas: "c1" "c2" "c3" "c4"; }
 
 #c1 {
-  grid-area: c1;
-  background: #a07e5d; }
+  grid-area: c1; }
 
 #c2 {
-  grid-area: c2;
-  background: #af6a2d; }
+  grid-area: c2; }
 
 #c3 {
-  grid-area: c3;
-  background: #ac4139; }
+  grid-area: c3; }
 
 #c4 {
-  grid-area: c4;
-  background: #664d4c; }
+  grid-area: c4; }
 
 #c1, #c2, #c3, #c4 {
   display: grid; }
@@ -107,19 +99,8 @@ a:hover {
   #c1 p, #c2 p, #c3 p, #c4 p {
     margin-top: 10%; }
 
-.projectIntro {
-  display: grid;
-  height: 250px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/work.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
 #projectMain {
   color: #000;
-  border-top: 8px solid #0B0C10;
-  border-bottom: 8px solid #0B0C10;
   text-shadow: #000;
   transition: all 0.4s ease-in-out; }
 
@@ -136,10 +117,10 @@ a:hover {
   display: none; }
 
 #projectGrid {
-  height: 1150px;
+  height: 1200px;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 33% 33% 33%;
+  grid-template-rows: 3 1fr;
   grid-template-areas: "p1" "p2" "p3"; }
 
 .penLogo {
@@ -155,13 +136,9 @@ a:hover {
   width: 100%;
   display: grid;
   color: white; }
-  .projectItem .button {
-    width: 140px;
-    padding: 5px;
-    font-size: 17px; }
 
 .p1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/img/eatery3.jpg") no-repeat 0 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/eatery3.jpg") no-repeat 0 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -170,7 +147,7 @@ a:hover {
   grid-area: p1; }
 
 .p2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/img/trump.jpg") no-repeat 0 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/trump.jpg") no-repeat 0 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -179,7 +156,12 @@ a:hover {
   grid-area: p2; }
 
 .p3 {
-  background: #161616;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/codepen.png") no-repeat 0 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
   grid-area: p3; }
 
 .codeBackground {
@@ -190,66 +172,46 @@ a:hover {
   background-size: cover !important;
   background-position: left !important; }
 
-#showcaseButton {
-  width: auto;
-  max-width: 320px;
-  border: #000 2px solid;
-  margin: 0 auto; }
-
-#formButton {
-  background: none;
-  border: #000 2px solid;
-  color: #fff;
-  width: 50%;
-  padding: 10px;
-  margin: 0 auto;
-  display: block; }
-
-#formButton:hover {
-  border: green 2px solid;
-  color: white; }
-
 .button {
-  width: 170px;
+  width: 130px;
+  height: 50px;
   display: block;
   margin: 15px auto;
-  border: 1px solid #fff;
-  color: #E1AC59;
-  border-radius: 15%;
   text-decoration: none;
+  text-align: center;
   transition: .40s;
+  padding: 10px;
   -webkit-transition: .40s;
-  padding: 15px 20px;
   font-size: 20px;
   font-weight: bold;
-  text-transform: uppercase;
   letter-spacing: 0px;
-  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  background: #04b6ce;
+  color: #fff;
   white-space: nowrap;
   cursor: pointer; }
   .button:hover {
-    background-color: #E2AD58;
-    border: 4px solid #E2AD58;
+    background: #05d3ee;
     color: #fff; }
 
 .contact {
   display: grid;
+  background: #3D3D3D;
   height: 800px;
   margin: 0 auto; }
   .contact h2 {
     text-align: center;
-    margin-bottom: 30px;
-    color: #63F4EA; }
+    margin-bottom: 30px; }
 
 .contactForm {
-  width: 100%;
+  width: 85%;
   justify-self: center;
   align-self: center; }
   .contactForm .input, .contactForm .textarea {
     color: white;
     background: none;
     border: none;
-    border-bottom: #E2AD58 solid 1px;
+    border-bottom: #04b6ce solid 1px;
     margin: 30px auto;
     width: 100%;
     display: block; }
@@ -259,6 +221,12 @@ a:hover {
     padding-bottom: 15px; }
   .contactForm .textarea {
     height: 100px; }
+  .contactForm .button {
+    color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+    padding: 0; }
 
 .input:focus {
   border-bottom: #fff solid 1px; }
@@ -269,40 +237,24 @@ a:hover {
 @media (min-width: 1050px) {
   .showcase {
     display: grid;
-    position: relative;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 20% 50% 30%;
-    grid-template-areas: '. .' 'sc-image sc-text' 'sc-image .'; }
-
-  .sc-image {
-    display: block;
-    justify-self: end;
-    align-self: end;
-    grid-area: sc-image;
-    height: 100%;
-    min-height: 380px;
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 10px #222); }
+    position: relative; }
 
   .sc-text {
     grid-area: sc-text;
     justify-self: start;
     align-self: center;
     display: block; }
-    .sc-text h4 {
-      font-size: 3rem; }
     .sc-text h1 {
-      font-size: 4rem; }
-
-  #scTextCont {
-    color: #000;
-    text-align: left; }
+      text-align: left; }
+    .sc-text .button {
+      float: left; }
 
   .aboutCont {
     padding: 0 15%; }
 
   .languageGrid {
-    height: 400px;
+    height: 500px;
+    background-image: linear-gradient(to right, #08c6df, #1b6c77);
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 100%;
     grid-template-areas: "c1 c2 c3 c4"; }
@@ -322,18 +274,23 @@ a:hover {
     grid-row: 1; }
 
   #projectMain {
-    background: #ddc6b5;
-    height: 650px;
+    height: 800px;
     transition: all 0.4s ease-in-out;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 100%;
     grid-template-areas: "arcadia-text arcadia-bg"; }
+    #projectMain .textCont {
+      text-align: left; }
 
   #arcadia-text {
     height: auto;
     grid-area: arcadia-text;
     background: transparent; }
+    #arcadia-text .textCont {
+      padding: 0 10%; }
+      #arcadia-text .textCont h2 {
+        margin-bottom: 40px; }
 
   #arcadia-bg {
     display: grid;
@@ -343,7 +300,7 @@ a:hover {
 
   .button {
     display: inline-block;
-    margin: 10px; }
+    margin-right: 15px; }
     .button .fab, .button .fas {
       margin: 0; }
 
