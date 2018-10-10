@@ -35,6 +35,8 @@ window.addEventListener("load", function(){
 })
 
 
+
+
 // fade up animation
 // let slider = document.querySelector('.slider');
 // let processCont = document.querySelector('.process');

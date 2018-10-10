@@ -11,17 +11,17 @@
 </head>
 <body>
 	<div class="showcase">
-			<img class="sc-image" src="/img/pic 1.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
+			<img class="sc-image" src="/img/pic2.jpg" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
 			<div class="sc-text">
 				<div id="scTextCont" class="textCont" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" >
 					<h4>Oh,</h4>
 					<h1>Good Evening!</h1>
 					<p>Here you'll find my skills and my most recent projects.</p>
-					<div><a id="showcaseButton" class="button" data-scroll href="#xp">Show me your moves!</a></div>
+					<a id="showcaseButton" class="button" href="#scroll">Show me your moves!</a>
 				</div>
 			</div>
 		</div>
-		<div class="aboutCont">
+		<div id="scroll" class="aboutCont">
 				<div class="textCont" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
 					<h2>Me, Myself and I</h2>
 					<p>I am a passionate developer who likes to keep up with the latest trends. Always wanting to learn more and never too afraid to ask why</p>
@@ -100,11 +100,9 @@
 					<a id="git3" class="button" href="#">Github <i class="fab fa-github"></i></a>
 				</div>
 			</div>
+			<div class="penLogo"><i class="fab fa-codepen fa-4x"></i></div>
 			<div class="projectItem p3">
-				<div class="penLogo">
-					<i class="fab fa-codepen fa-4x"></i>
-				</div>
-				<div data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" class="codePenCont textCont">
+				<div class="codepenCont textCont" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
 					<h1>Code Pen</h1>
 					<p>Have a look at all my <span><a href="www.codepen.io">pens</a></span> or view my favourite ones below!</p>
 					<a class="button" href="#">Gallery</a>
@@ -113,22 +111,21 @@
 			</div>
 		</div>
 		<div class="contact">
-			<form class="contactForm">
+			<form class="contactForm" method="post" action="contact-form-handler.php">
 				<h2>Contact Me</h2>
 				<input class="input" name="name" type="text" placeholder="Your Name" required/>
 				<input class="input" name="email" type="email" placeholder="Your Email" required/>
 				<input class="input" name="subject" type="text" placeholder="Subject" required/>
-				<textarea class="textarea" name="message" type="textarea" placeholder="Your message" required/></textarea>
+				<textarea class="textarea" name="message" type="textarea" placeholder="Your message" required></textarea>
 				<input id="formButton" class="button" type="submit" value="Send" >
 			</form>
 		</div>
 		
  	
-     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-   <script src="/js/script.js"></script>
-	<!-- smooth scrolling -->
-   <script src="/js/smoothscroll.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<script src="/js/script.js"></script>
+	<script src="/js/scroll.js"></script>
    <!-- Fade in effects -->
    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>AOS.init();</script>
