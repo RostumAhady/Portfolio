@@ -43,7 +43,7 @@ a:hover {
   grid-template-rows: 100%;
   grid-template-areas: 'sc-text';
   height: 98vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/pic2.jpg") no-repeat 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/pic2.jpg") no-repeat 0;
   background-size: cover;
   background-position: center;
   justify-items: center;
