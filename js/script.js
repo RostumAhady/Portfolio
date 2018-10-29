@@ -29,9 +29,10 @@ const scText = document.querySelector('.sc-text');
 //preloader
 
 window.addEventListener("load", function(){
+    body.style.display = "block";
     changeMessage();
     setTimeout(() => {
-        body.style.display = "block";
+        
         body.style.opacity = '1';
         scText.style.display = "block";
     }, 700);
