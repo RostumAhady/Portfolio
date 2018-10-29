@@ -100,14 +100,13 @@ a:hover {
     margin-top: 10%; }
 
 #projectMain {
-  color: #000;
   text-shadow: #000;
   transition: all 0.4s ease-in-out; }
 
 #arcadia-text {
   display: grid;
   height: 600px;
-  background-image: url("/img/scaffold.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/arcadia2.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -138,7 +137,7 @@ a:hover {
   color: white; }
 
 .p1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/eatery3.jpg") no-repeat 0 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/heroes.jpg") no-repeat 0 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -243,7 +242,8 @@ a:hover {
     grid-area: sc-text;
     justify-self: start;
     align-self: center;
-    display: block; }
+    display: block;
+    padding-left: 100px; }
     .sc-text h1 {
       text-align: left; }
     .sc-text .button {
@@ -286,7 +286,8 @@ a:hover {
   #arcadia-text {
     height: auto;
     grid-area: arcadia-text;
-    background: transparent; }
+    background: transparent;
+    color: #000; }
     #arcadia-text .textCont {
       padding: 0 10%; }
       #arcadia-text .textCont h2 {

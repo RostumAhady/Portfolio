@@ -6,6 +6,7 @@ const p1 = document.querySelector(".p1");
 const p2 = document.querySelector(".p2");
 const p3 = document.querySelector(".p3");
 const body =document.querySelector("body");
+const greet = document.querySelector('.greet');
 
 // fire when screen size is above 813px
     //SECOND PROJECT BUTTON
@@ -28,11 +29,24 @@ const body =document.querySelector("body");
 //preloader
 
 window.addEventListener("load", function(){
-
     body.style.opacity = '1';
-
-    
+    changeMessage();
 })
+
+// Greeting message change based on time of day
+time = new Date().getHours();
+function changeMessage(){
+    if(time < 7 ){
+        greet.innerHTML = 'Oh, Hello Early Bird!'
+    } else if (time >=7 && time < 12){
+        greet.innerHTML = 'Oh, Good Morning!'
+    } else if (time >= 12 && time < 18){
+        greet.innerHTML = 'Oh, Good Afternoon!'
+    } else if(time >= 18){
+        greet.innerHTML = 'Oh, Good Evening!'
+    }
+}
+
 
 
 
