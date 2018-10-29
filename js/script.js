@@ -33,7 +33,7 @@ window.addEventListener("load", function(){
     setTimeout(() => {
         body.style.opacity = '1';
         scText.style.display = "block";
-    }, 2000);
+    }, 1000);
     
 })
 
