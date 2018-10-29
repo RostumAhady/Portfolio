@@ -32,9 +32,7 @@ window.addEventListener("load", function(){
     body.style.display = "block";
     changeMessage();
     setTimeout(() => {
-        
         body.style.opacity = '1';
-        scText.style.display = "block";
     }, 700);
     
 })
