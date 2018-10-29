@@ -31,9 +31,10 @@ const scText = document.querySelector('.sc-text');
 window.addEventListener("load", function(){
     changeMessage();
     setTimeout(() => {
+        body.style.display = "block";
         body.style.opacity = '1';
         scText.style.display = "block";
-    }, 1000);
+    }, 700);
     
 })
 
