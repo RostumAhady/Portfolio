@@ -186,7 +186,7 @@ a{
     color: white;
 }
 .p1{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/heroes.jpg") no-repeat 0 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/heroes.jpg") no-repeat 0 0;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -195,7 +195,7 @@ a{
     grid-area: p1;
 }
 .p2{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://rostumahady.github.io/Portfolio/img/trump.jpg") no-repeat 0 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/trump.jpg") no-repeat 0 0;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
