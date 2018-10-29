@@ -1,37 +1,312 @@
-/*
-Error: Invalid CSS after "    }": expected selector or at-rule, was "}"
-        on line 397 of scss/main.scss
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+body {
+  opacity: 0;
+  max-width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #fff;
+  transition: all 1s ease; }
 
-392:         }
-393:     }
-394:     .contactForm{
-395:         width: 480px;
-396:     }
-397: }
+h2 {
+  font-weight: bold; }
 
-Backtrace:
-scss/main.scss:397
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:1278:in `expected'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:1208:in `expected'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:42:in `parse'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:414:in `_to_tree'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:294:in `watch'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin.rb:109:in `method_missing'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:51:in `process_result'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/exec/base.rb:52:in `parse'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/exec/base.rb:19:in `parse!'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/bin/sass:13:in `<top (required)>'
-C:/Ruby24-x64/bin/sass:23:in `load'
-C:/Ruby24-x64/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"    }\": expected selector or at-rule, was \"}\"\A         on line 397 of scss/main.scss\A \A 392:         }\A 393:     }\A 394:     .contactForm{\A 395:         width: 480px;\A 396:     }\A 397: }"; }
+.textCont {
+  justify-self: center;
+  align-self: center;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0% 5%;
+  font-family: 'Roboto', sans-serif; }
+  .textCont h2 {
+    margin-bottom: 10px;
+    letter-spacing: 1px; }
+
+h1, h4, h5 {
+  margin: 0; }
+
+.fab, .fas {
+  margin: 0 10px;
+  text-shadow: 4px 4px 8px #000000; }
+
+p {
+  font-size: 20px; }
+
+a:hover {
+  text-decoration: none; }
+
+.showcase {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
+  grid-template-areas: 'sc-text';
+  height: 98vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://rostumahady.github.io/Portfolio/img/pic2.jpg") no-repeat 0;
+  background-size: cover;
+  background-position: center;
+  justify-items: center;
+  align-items: center; }
+
+.sc-text {
+  grid-area: sc-text;
+  width: 100%; }
+  .sc-text h1 {
+    text-align: center;
+    line-height: 20px; }
+  .sc-text .button {
+    width: 235px;
+    text-align: center;
+    margin: 35px auto 0 auto; }
+
+.aboutCont {
+  height: 300px;
+  background: #797979;
+  display: grid;
+  justify-items: center;
+  align-items: center; }
+  .aboutCont p {
+    margin-top: 15px;
+    margin-bottom: 0; }
+
+.languageGrid {
+  height: 1400px;
+  background-image: linear-gradient(to bottom, #08c6df, #187a86);
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-areas: "c1" "c2" "c3" "c4"; }
+
+#c1 {
+  grid-area: c1; }
+
+#c2 {
+  grid-area: c2; }
+
+#c3 {
+  grid-area: c3; }
+
+#c4 {
+  grid-area: c4; }
+
+#c1, #c2, #c3, #c4 {
+  display: grid; }
+  #c1 h2, #c2 h2, #c3 h2, #c4 h2 {
+    margin-top: 40px; }
+  #c1 p, #c2 p, #c3 p, #c4 p {
+    margin-top: 10%; }
+
+#projectMain {
+  text-shadow: #000;
+  transition: all 0.4s ease-in-out; }
+
+#arcadia-text {
+  display: grid;
+  height: 600px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/arcadia2.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+#arcadia-bg {
+  display: none; }
+
+#projectGrid {
+  height: 1200px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 3 1fr;
+  grid-template-areas: "p1" "p2" "p3"; }
+
+.penLogo {
+  grid-area: penLogo;
+  grid-row: 3;
+  grid-column: 1;
+  z-index: 9;
+  text-align: center;
+  margin-top: 10px; }
+
+.projectItem {
+  transition: all 0.35s ease-in-out;
+  width: 100%;
+  display: grid;
+  color: white; }
+
+.p1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://rostumahady.github.io/Portfolio/img/heroes.jpg") no-repeat 0 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  grid-area: p1; }
+
+.p2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://rostumahady.github.io/Portfolio/img/trump.jpg") no-repeat 0 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  grid-area: p2; }
+
+.p3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://rostumahady.github.io/Portfolio/img/codepen.png") no-repeat 0 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  grid-area: p3; }
+
+.codeBackground {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://rostumahady.github.io/Portfolio/img/code1.jpg") no-repeat 0 0 !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+  background-position: left !important; }
+
+.button {
+  width: 130px;
+  height: 50px;
+  display: block;
+  margin: 15px auto;
+  text-decoration: none;
+  text-align: center;
+  transition: .40s;
+  padding: 10px;
+  -webkit-transition: .40s;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  border: none;
+  background: #04b6ce;
+  color: #fff;
+  white-space: nowrap;
+  cursor: pointer; }
+  .button:hover {
+    background: #05d3ee;
+    color: #fff; }
+
+.contact {
+  display: grid;
+  background: #3D3D3D;
+  height: 800px;
+  margin: 0 auto; }
+  .contact h2 {
+    text-align: center;
+    margin-bottom: 30px; }
+
+.contactForm {
+  width: 85%;
+  justify-self: center;
+  align-self: center; }
+  .contactForm .input, .contactForm .textarea {
+    color: white;
+    background: none;
+    border: none;
+    border-bottom: #04b6ce solid 1px;
+    margin: 30px auto;
+    width: 100%;
+    display: block; }
+    .contactForm .input :focus, .contactForm .textarea :focus {
+      border-bottom: pink; }
+  .contactForm .input {
+    padding-bottom: 15px; }
+  .contactForm .textarea {
+    height: 100px; }
+  .contactForm .button {
+    color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+    padding: 0; }
+
+.input:focus {
+  border-bottom: #fff solid 1px; }
+
+:focus {
+  outline: none; }
+
+@media (min-width: 1050px) {
+  .showcase {
+    display: grid;
+    position: relative; }
+
+  .sc-text {
+    grid-area: sc-text;
+    justify-self: start;
+    align-self: center;
+    display: block;
+    padding-left: 100px; }
+    .sc-text h1 {
+      text-align: left;
+      font-size: 48px;
+      font-weight: bold;
+      line-height: 73px; }
+    .sc-text .button {
+      float: left; }
+
+  .aboutCont {
+    padding: 0 15%; }
+
+  .languageGrid {
+    height: 500px;
+    background-image: linear-gradient(to right, #08c6df, #1b6c77);
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;
+    grid-template-areas: "c1 c2 c3 c4"; }
+
+  #projectGrid {
+    height: 400px;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: "p1 p2 p3" "p1 p2 p3"; }
+
+  .penLogo {
+    grid-area: penLogo;
+    justify-self: center;
+    align-self: center;
+    height: max-content;
+    grid-column: 3;
+    grid-row: 1; }
+
+  #projectMain {
+    height: 800px;
+    transition: all 0.4s ease-in-out;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: "arcadia-text arcadia-bg"; }
+    #projectMain .textCont {
+      text-align: left; }
+
+  #arcadia-text {
+    height: auto;
+    grid-area: arcadia-text;
+    background: transparent;
+    color: #000; }
+    #arcadia-text .textCont {
+      padding: 0 10%; }
+      #arcadia-text .textCont h2 {
+        margin-bottom: 40px; }
+
+  #arcadia-bg {
+    display: grid;
+    grid-area: arcadia-bg; }
+    #arcadia-bg img {
+      width: 100%; }
+
+  .button {
+    display: inline-block;
+    margin-right: 15px; }
+    .button .fab, .button .fas {
+      margin: 0; }
+
+  .contactForm {
+    width: 480px; } }
+
+/*# sourceMappingURL=main.css.map */
