@@ -7,7 +7,7 @@ const p2 = document.querySelector(".p2");
 const p3 = document.querySelector(".p3");
 const body = document.querySelector("body");
 const greet = document.querySelector('.greet');
-
+const scText = document.querySelector('.sc-text');
 
     //SECOND PROJECT BUTTON
     git2.addEventListener("mouseenter", function() {        
@@ -32,6 +32,7 @@ window.addEventListener("load", function(){
     changeMessage();
     setTimeout(() => {
         body.style.opacity = '1';
+        scText.style.display = "block";
     }, 2000);
     
 })

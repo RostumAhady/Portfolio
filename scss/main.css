@@ -50,6 +50,7 @@ a:hover {
   align-items: center; }
 
 .sc-text {
+  display: none;
   grid-area: sc-text;
   width: 100%; }
   .sc-text h1 {
