@@ -105,12 +105,15 @@
 			</div>
 		</div>
 		<div class="contact">
-			<form class="contactForm" method="post" action="php/contact-form-handler.php">
+			<form class="contactForm" method="post" action="https://formspree.io/rostumahady@gmail.com">
 				<h2>Contact Me</h2>
 				<input class="input" name="name" type="text" placeholder="Your Name" required/>
-				<input class="input" name="email" type="email" placeholder="Your Email" required/>
-				<input class="input" name="subject" type="text" placeholder="Subject" required/>
+				<input class="input" name="_replyto" type="email" placeholder="Your Email" required/>
+				<!-- <input class="input" name="_subject" type="text" placeholder="Subject" required/> -->
+				<input type="hidden" name="_subject" value="New submission!"/>
 				<textarea class="textarea" name="message" type="textarea" placeholder="Your message" required></textarea>
+				<!-- redirect to original page -->
+				<input type="hidden" name="_next" value="https://rostumahady.github.io/index.html" /> 
 				<input class="button" type="submit" value="Send" >
 			</form>
 		</div>
