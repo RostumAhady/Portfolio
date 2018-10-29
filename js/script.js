@@ -5,10 +5,10 @@ const git3 = document.getElementById("git3");
 const p1 = document.querySelector(".p1");
 const p2 = document.querySelector(".p2");
 const p3 = document.querySelector(".p3");
-const body =document.querySelector("body");
+const body = document.querySelector("body");
 const greet = document.querySelector('.greet');
 
-console.log(git2);
+
     //SECOND PROJECT BUTTON
     git2.addEventListener("mouseenter", function() {        
         p1.classList.add('codeBackground');
