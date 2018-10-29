@@ -8,7 +8,7 @@ const p3 = document.querySelector(".p3");
 const body =document.querySelector("body");
 const greet = document.querySelector('.greet');
 
-// fire when screen size is above 813px
+console.log(git2);
     //SECOND PROJECT BUTTON
     git2.addEventListener("mouseenter", function() {        
         p1.classList.add('codeBackground');
