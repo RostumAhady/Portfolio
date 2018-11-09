@@ -1,7 +1,6 @@
 // grabbing the elements
 
 const git2 = document.getElementById("git2");
-const git3 = document.getElementById("git3");
 const p1 = document.querySelector(".p1");
 const p2 = document.querySelector(".p2");
 const p3 = document.querySelector(".p3");
@@ -17,14 +16,6 @@ const scText = document.querySelector('.sc-text');
         p1.classList.remove('codeBackground');   
     })
     
-    //THIRD PROJECT BUTTON
-    git3.addEventListener("mouseenter", function() {   
-        p2.classList.add('codeBackground');
-        
-    }, false);
-    git3.addEventListener("mouseleave", function(){
-        p2.classList.remove('codeBackground');   
-    })
 
 //preloader
 
@@ -51,7 +42,15 @@ function changeMessage(){
     }
 }
 
+// links open in new tab
 
+function externalLinks() {   
+    for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) { 
+        var b = c[a];
+        b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank")   
+    } 
+};
+externalLinks(); 
 
 
 

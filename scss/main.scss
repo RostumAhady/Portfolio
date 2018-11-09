@@ -28,7 +28,7 @@ h2{
     padding: 0% 5%;
     font-family: 'Roboto', sans-serif;
     h2{
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         letter-spacing: 1px;
     }
 }
@@ -230,7 +230,8 @@ a{
 //   Buttons  //
 ////////////
 .button {
-    width: 130px;
+    min-width: 130px;
+    width: max-content;
     height: 50px;
     display: block;
     margin: 15px auto;
