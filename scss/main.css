@@ -33,7 +33,7 @@ h1, h4, h5 {
 
 .fab, .fas {
   margin: 5px 10px;
-  text-shadow: 4px 4px 8px #000000; }
+  text-shadow: 2px 4px 0px #0000007e; }
 
 p {
   font-size: 20px; }
@@ -47,7 +47,7 @@ a:hover {
   grid-template-rows: 100%;
   grid-template-areas: 'sc-text';
   height: 98vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://rostumahady.github.io/portfolio/img/pic2.jpg") no-repeat 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/pic2.jpg") no-repeat 0;
   background-size: cover;
   background-position: center;
   justify-items: center;
@@ -108,7 +108,7 @@ a:hover {
 #arcadia-text {
   display: grid;
   height: 600px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://rostumahady.github.io/portfolio/img/arcadia2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/arcadia2.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -125,13 +125,6 @@ a:hover {
   grid-template-rows: 3 1fr;
   grid-template-areas: "p1" "p2" "p3"; }
 
-.penLogo {
-  grid-area: penLogo;
-  grid-row: 3;
-  grid-column: 1;
-  z-index: 9;
-  text-align: center; }
-
 .projectItem {
   transition: all 0.35s ease-in-out;
   width: 100%;
@@ -139,7 +132,7 @@ a:hover {
   color: white; }
 
 .p1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/675951/pexels-photo-675951.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat 0 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/kuchi.jpeg") no-repeat 0 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -148,7 +141,7 @@ a:hover {
   grid-area: p1; }
 
 .p2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://rostumahady.github.io/portfolio/img/JS.png") no-repeat 0 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/JS.png") no-repeat 0 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -157,7 +150,7 @@ a:hover {
   grid-area: p2; }
 
 .p3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://rostumahady.github.io/portfolio/img/heroes.jpg") no-repeat 0 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/heroes.jpg") no-repeat 0 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -166,12 +159,15 @@ a:hover {
   grid-area: p3; }
 
 .codeBackground {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://rostumahady.github.io/portfolio/img/code1.jpg") no-repeat 0 0 !important;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/code1.jpg") no-repeat 0 0 !important;
   -webkit-background-size: cover !important;
   -moz-background-size: cover !important;
   -o-background-size: cover !important;
   background-size: cover !important;
   background-position: left !important; }
+
+.color {
+  color: #e28c0a; }
 
 .button {
   min-width: 130px;
@@ -198,7 +194,7 @@ a:hover {
 
 .contact {
   display: grid;
-  background: #3D3D3D;
+  background: #444141;
   height: 700px;
   margin: 0 auto; }
   .contact h2 {
@@ -214,7 +210,7 @@ a:hover {
     background: none;
     border: none;
     border-bottom: #04b6ce solid 1px;
-    margin: 30px auto;
+    margin: 40px auto;
     width: 100%;
     display: block; }
     .contactForm .input :focus, .contactForm .textarea :focus {
@@ -270,14 +266,6 @@ a:hover {
     grid-template-columns: 33.33% 33.33% 33.33%;
     grid-template-rows: 20% 80%;
     grid-template-areas: "p1 p2 p3" "p1 p2 p3"; }
-
-  .penLogo {
-    grid-area: penLogo;
-    justify-self: center;
-    align-self: center;
-    height: max-content;
-    grid-column: 3;
-    grid-row: 1; }
 
   #projectMain {
     height: 800px;

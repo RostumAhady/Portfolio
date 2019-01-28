@@ -79,52 +79,75 @@
 		</div>
 		<div id="projectGrid">
 			<div class="projectItem p1">
-					<div data-aos="fade-up"  data-aos-duration="700" data-aos-delay="200" data-aos-once="true" class="textCont">
-							<h2>Kuchi</h2>
-							<p>A website for a future restaurant that doesn't exist, yet.</p>
-							<a class="button" href="https://rostumahady.github.io/restaurant">Link to Site</a>
-							<a id="git2" class="button" href="https://github.com/RostumAhady/restaurant">Github <i class="fab fa-github"></i></a>
-						</div>
+				<div data-aos="fade-up"  data-aos-duration="700" data-aos-delay="200" data-aos-once="true" class="textCont">
+					<h2>Kuchi</h2>
+					<p>A website for a restaurant that doesn't exist, yet.</p>
+					<a class="button" href="https://rostumahady.github.io/restaurant/">Link to Site</a>
+					<a id="git2" class="button" href="https://github.com/RostumAhady/restaurant">Github <i class="fab fa-github"></i></a>
+				</div>
 			</div>
 			<div class="projectItem p2">
 				<div  data-aos="fade-up"  data-aos-duration="700" data-aos-delay="200" data-aos-once="true" class="textCont">
 					<h2>JavaScript Fun</h2>
-					<p>These were initially just JavaScript playgrounds, now they're your entertainment.</p>
+					<p>Projects created to combine two things. JavaScript and personal flavour.   </p>
 					<a class="button" href="https://rostumahady.github.io/trumpsoundboard">Trump Soundboard</a>
 					<a class="button" href="https://rostumahady.github.io/charginggame">Charging Game</a>
 					<!-- <a id="git3" class="button" href="https://github.com/RostumAhady/trumpsoundboard">Github <i class="fab fa-github"></i></a> -->
 				</div>
 			</div>
-			<div class="penLogo" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200" data-aos-once="true">
-				<i class="fab fa-codepen fa-3x"></i>
-			</div>
 			<div class="projectItem p3">
 				<div data-aos="fade-up"  data-aos-duration="700" data-aos-delay="200" data-aos-once="true" class="textCont">
 						<h2>Hots Tips</h2>
-						<p>A website in progress using API to fetch game data and to display game tips for users with local JSON.</p>
-						<a class="button" href="http://www.hotstips.com">Link to Site</a>
-						<a id="git2" class="button" href="https://github.com/RostumAhady/Hots-Tips">Github <i class="fab fa-github"></i></a>
+						<p>A website <span class="color">in progress</span> using API to fetch game data and to display game tips for users with local JSON.</p>
+						<a class="button" href="http://www.heroestips.com">Link to Site</a>
+						<a id="git2" class="button" href="">Github <i class="fab fa-github"></i></a>
 					</div>
 				<!-- <div class="textCont" data-aos="fade-up"  data-aos-duration="700" data-aos-delay="200" data-aos-once="true">
 					<h2>CodePen</h2>
-					<p>Have a look at all my <span><a href="www.codepen.io">pens</a></span> or view my favourite ones below!</p>
+					<p>Have a look at all my <span><a href="https://www.codepen.io/RostumAha">pens</a></span> or view my favourite ones below!</p>
 					<a class="button" href="https://codepen.io/RostumAha/pen/bjJxqR">Gallery</a>
 					<a class="button" href="https://codepen.io/RostumAha/pen/bmjmXo">Sticky Nav</a>
 				</div> -->
 			</div>
 		</div>
 		<div class="contact">
-			<form class="contactForm" method="post" action="https://formspree.io/rostumahady@gmail.com">
+			<form class="contactForm" name="contactform" method="post" action="send_form_email.php">
+				<h2>Contact Me</h2>
+				<input class="input" type="text" name="first_name" maxlength="50" size="30" placeholder="First Name">
+				<input class="input" type="text" name="last_name" maxlength="50" size="30" placeholder="Last Name">
+				<input class="input" type="text" name="email" maxlength="80" size="30" placeholder="Your Email">
+				<textarea class="textarea" name="comments" placeholder="Your Message"></textarea>
+				<input class="button" type="submit" value="Submit">
+			</form>
+
+
+
+
+
+
+
+			<!-- <form class="contactForm" method="post" action="https://formspree.io/rostumahady@gmail.com"> -->
+			<!-- <form class="contactForm" method="post" action="contact-form.php">
 				<h2>Contact Me</h2>
 				<input class="input" name="name" type="text" placeholder="Your Name" pattern="[A-Za-z]\S.*\S" title="Only letters e.g John Smith" required/>
-				<input class="input" name="_replyto" type="email" placeholder="Your Email" required/>
-				<!-- <input class="input" name="_subject" type="text" placeholder="Subject" required/> -->
-				<input type="hidden" name="_subject" value="New submission on Rostum Ahady Portfolio!"/>
+				<input class="input" name="mail" type="email" placeholder="Your Email" required/>
 				<textarea class="textarea" name="message" type="textarea" placeholder="Your message" required></textarea>
+				<input class="button" type="submit" value="Send" > -->
+
+
+
+
+
+
+
+
+				<!-- <input class="input" name="name" type="text" placeholder="Your Name" pattern="[A-Za-z]\S.*\S" title="Only letters e.g John Smith" required/> -->
+				<!-- <input class="input" name="_replyto" type="email" placeholder="Your Email" required/> -->
+				<!-- <input class="input" name="_subject" type="text" placeholder="Subject" required/> -->
+				<!-- <input type="hidden" name="_subject" value="New submission on Rostum Ahady Portfolio!"/> -->
 				<!-- redirect to original page -->
-				<input type="hidden" name="_next" value="https://rostumahady.github.io/portfolio/" /> 
-				<input class="button" type="submit" value="Send" >
-			</form>
+				<!-- <input type="hidden" name="_next" value="https://rostumahady.github.io/portfolio/" />  -->
+			<!-- </form> -->
 		</div>
 	
 	<script src="https://code.jquery.com/jquery-latest.js"></script>
